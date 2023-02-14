@@ -45,6 +45,14 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
 
           <link
+            rel="preload"
+            href="../../public/fonts/planetkosmos .woff"
+            as="font"
+            type="font/woff"
+            crossOrigin=""
+          />
+
+          <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
             rel="stylesheet"
           />

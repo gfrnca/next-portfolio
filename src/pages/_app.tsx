@@ -11,9 +11,6 @@ import theme from "../styles/theme";
 // Components
 import Navbar from "../components/organisms/Navbar/Navbar";
 
-// Fonts
-const planetKosmos = localFont({ src: "./planet.TTF" });
-
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>

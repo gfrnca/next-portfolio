@@ -1,10 +1,10 @@
-import { NavbarContainer } from "./Navbar.styled";
+import { NavbarWrapper } from "./Navbar.styled";
 
 const Navbar = () => {
   return (
-    <NavbarContainer>
-      <h1>Navbar</h1>
-    </NavbarContainer>
+    <NavbarWrapper>
+      <h1>gfrnca</h1>
+    </NavbarWrapper>
   );
 };
 

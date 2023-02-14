@@ -1,3 +1,5 @@
+// Global Theme
+
 const theme = {
     colors: {
       background: '#121214',
