@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from "next/head";
+import HomePage from "../components/templates/HomePage/HomePage";
 
 export default function Home() {
   return (
@@ -7,8 +8,8 @@ export default function Home() {
         <title>Create Next App</title>
       </Head>
       <main>
-
+        <HomePage />
       </main>
     </>
-  )
+  );
 }

@@ -11,6 +11,7 @@ export const NavbarWrapper = styled.nav `
         font-family: PlanetKosmos;
         letter-spacing: 2px;
         font-size: 25px;
+        cursor: pointer;
 
         h1 span {
             color: ${props => props.theme.colors.primary}
