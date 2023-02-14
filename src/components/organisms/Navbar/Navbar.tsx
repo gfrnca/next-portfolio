@@ -11,7 +11,7 @@ const Navbar = () => {
       <NavbarWrapper>
         <div className="brand">
           <h1>
-            gfrn<span>c</span>a
+            GFRN<span>C</span>A
           </h1>
         </div>
 

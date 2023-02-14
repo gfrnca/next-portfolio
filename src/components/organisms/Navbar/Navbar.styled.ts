@@ -11,8 +11,8 @@ export const NavbarWrapper = styled.nav `
     margin-bottom: 60px;
 
     .brand {
-        letter-spacing: 2px;
-        font-size: 25px;
+        letter-spacing: 4px;
+        font-size: 30px;
         cursor: pointer;
 
         h1 span {

@@ -42,6 +42,7 @@ const Hero = () => {
           development, and I find myself <strong>fascinated</strong> by the
           endless possibilities that this field has to offer.
         </p>
+        <div className="separator" />
       </div>
       <div className="right"></div>
     </HeroWrapper>

@@ -9,7 +9,6 @@ const HomePage = () => {
   return (
     <Container>
       <HomePageWrapper>
-        <div className="ball" />
         <Hero />
       </HomePageWrapper>
     </Container>
