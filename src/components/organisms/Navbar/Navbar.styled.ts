@@ -11,7 +11,6 @@ export const NavbarWrapper = styled.nav `
     margin-bottom: 60px;
 
     .brand {
-        font-family: PlanetKosmos;
         letter-spacing: 2px;
         font-size: 25px;
         cursor: pointer;
@@ -21,8 +20,15 @@ export const NavbarWrapper = styled.nav `
         }
     }
 
+    .nav-links {
+        .active {
+            color: white;
+        }
+    }
+
     .nav-links a {
-        margin-right: 24px;
+        margin-right: 70px;
+        color: #737380;
 
         &:last-child {
             margin-right: 0px;

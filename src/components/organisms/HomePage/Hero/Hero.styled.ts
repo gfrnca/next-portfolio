@@ -13,15 +13,11 @@ export const HeroWrapper = styled.div `
         100% { transform: rotate( 0.0deg) }
     }   
 
-
-    height: 300px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     
     .left {
         display: flex;
-        flex: 1;
         flex-direction: column;
     }
 
@@ -42,7 +38,6 @@ export const HeroWrapper = styled.div `
 
     .right {
         display: flex;
-        flex: 0.3;
         flex-direction: column;
     }
 
@@ -60,7 +55,7 @@ export const HeroWrapper = styled.div `
         font-size: 20px;
         line-height: 1.5;
         color: #c2c2c2;
-        width: 800px;
+        max-width: 800px;
 
         span {
             font-size: 24px;
