@@ -7,12 +7,12 @@ import Hero from "../../organisms/HomePage/Hero/Hero";
 
 const HomePage = () => {
   return (
-    <HomePageWrapper>
-      <div className="ball" />
-      <Container>
-        <Hero></Hero>
-      </Container>
-    </HomePageWrapper>
+    <Container>
+      <HomePageWrapper>
+        <div className="ball" />
+        <Hero />
+      </HomePageWrapper>
+    </Container>
   );
 };
 
