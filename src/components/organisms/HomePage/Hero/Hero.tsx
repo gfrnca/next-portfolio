@@ -14,7 +14,7 @@ import Skills from "../../Skills/Skills";
 const Hero = () => {
   return (
     <HeroWrapper>
-      <div className="left">
+      <div className="hero">
         <div className="title">
           <Image
             src="./assets/wave.svg"
@@ -25,10 +25,10 @@ const Hero = () => {
           <Typewriter
             options={{
               strings: [
-                "Hello, my name is <strong>Gabriel França</strong> !",
-                "Olá, meu nome é <strong>Gabriel França</strong> !",
-                "Bon jour, je m'appelle <strong>Gabriel França</strong> !",
-                "Hola, mi nombre es <strong>Gabriel França</strong> !",
+                "Hello, my name is <strong>Gabriel França</strong>!",
+                "Olá, meu nome é <strong>Gabriel França</strong>!",
+                "Bon jour, je m'appelle <strong>Gabriel França</strong>!",
+                "Hola, mi nombre es <strong>Gabriel França</strong>!",
               ],
               autoStart: true,
               loop: true,
@@ -44,12 +44,11 @@ const Hero = () => {
           <strong>functional</strong> digital experiences that engage and
           delight users. I am constantly exploring the world of web design and
           development, and I find myself <strong>fascinated</strong> by the
-          endless possibilities that this field has to offer.
+          endless possibilities that this field has to offer<span>.</span>
         </p>
         <Separator />
         <Skills />
       </div>
-      <div className="right"></div>
     </HeroWrapper>
   );
 };

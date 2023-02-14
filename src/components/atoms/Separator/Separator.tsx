@@ -9,7 +9,7 @@ const SeparatorWrapper = styled.div`
 
   .separator {
     width: 2px;
-    height: 80px;
+    height: 60px;
     background: linear-gradient(360deg, #671fc3, #121214);
   }
 `;

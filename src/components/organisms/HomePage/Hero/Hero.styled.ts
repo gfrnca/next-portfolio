@@ -32,31 +32,43 @@ export const HeroWrapper = styled.div`
   // Hero
 
   display: flex;
+  justify-content: center;
   flex-direction: row;
 
-  .left {
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #c2c2c2;
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+
+  .hero {
     display: flex;
     flex-direction: column;
-  }
 
-  .left .title {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
+    p {
+      font-size: 28px;
 
-  .title img {
-    margin-bottom: 13px;
-    margin-right: 15px;
-    animation-name: wave-animation;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    transform-origin: 70% 70%;
-  }
+      span {
+        color: ${(props) => props.theme.colors.secondary};
+      }
+    }
 
-  .right {
-    display: flex;
-    flex-direction: column;
+    .title {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      img {
+        margin-bottom: 13px;
+        margin-right: 15px;
+        animation-name: wave-animation;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        transform-origin: 70% 70%;
+      }
+    }
   }
 
   .quotes {
@@ -69,14 +81,6 @@ export const HeroWrapper = styled.div`
     z-index: -1;
   }
 
-  p {
-    font-size: 20px;
-    line-height: 1.5;
-    color: #c2c2c2;
-    max-width: 800px;
-    margin-bottom: 40px;
-  }
-
   .Typewriter {
     margin: 30px 0px 40px 0px;
 
@@ -85,9 +89,9 @@ export const HeroWrapper = styled.div`
       font-weight: 600;
 
       strong {
-        padding: 0px 10px;
-        border-radius: 10px;
-        background: ${(props) => props.theme.colors.primary};
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-color: ${(props) => props.theme.colors.primary};
         color: ${(props) => props.theme.colors.text};
       }
     }

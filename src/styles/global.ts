@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components'
+import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   // Fonts
@@ -23,13 +23,13 @@ export default createGlobalStyle`
   }
   
   body {
-    background: ${props => props.theme.colors.background};
+    background: ${(props) => props.theme.colors.background};
     min-height: 100vh;
-    color: ${props => props.theme.colors.text};
-    font: 400 16px Roboto, sans-serif;
+    color: ${(props) => props.theme.colors.text};
+    font: 400 16px Inter, sans-serif;
   }
-`
+`;
 
-export const Container = styled.div `
+export const Container = styled.div`
   padding: 0px 12vw;
-`
+`;

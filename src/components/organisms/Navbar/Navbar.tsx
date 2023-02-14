@@ -11,7 +11,9 @@ const Navbar = () => {
       <NavbarWrapper>
         <div className="brand">
           <h1>
-            GFRN<span>C</span>A
+            <span className="brackets">{"</"}</span>gfrn<strong>c</strong>a
+            <span className="brackets">{">"}</span>
+            <span>.</span>
           </h1>
         </div>
 
