@@ -34,14 +34,6 @@ export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  // Separator
-  .separator {
-    width: 2px;
-    height: 80px;
-    background: linear-gradient(180deg, #671fc3, #121214);
-    margin-top: 60px;
-  }
-
   .left {
     display: flex;
     flex-direction: column;
@@ -82,19 +74,14 @@ export const HeroWrapper = styled.div`
     line-height: 1.5;
     color: #c2c2c2;
     max-width: 800px;
-
-    span {
-      font-size: 24px;
-      font-weight: 800;
-      color: ${(props) => props.theme.colors.primary};
-    }
+    margin-bottom: 40px;
   }
 
   .Typewriter {
     margin: 30px 0px 40px 0px;
 
     span {
-      font-size: 40px;
+      font-size: 34px;
       font-weight: 600;
 
       strong {
