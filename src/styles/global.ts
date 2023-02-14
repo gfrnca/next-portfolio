@@ -17,10 +17,13 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+  
   body {
     background: ${props => props.theme.colors.background};
-    background-color: #000;
-    background-repeat: no-repeat;
     min-height: 100vh;
     color: ${props => props.theme.colors.text};
     font: 400 16px Roboto, sans-serif;

@@ -2,8 +2,8 @@
 
 const theme = {
     colors: {
-      background: 'linear-gradient(180deg, #000, #000, rgba(103, 31, 195, 0.1))',
-      text: '#e1e1e6',
+      background: '#080808',
+      text: '#ededed',
       primary: '#671fc3'
     }
   }
