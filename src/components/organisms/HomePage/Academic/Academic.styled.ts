@@ -20,6 +20,11 @@ export const AcademicWrapper = styled.div`
   .formations {
     .formation {
       padding: 0px 300px;
+      margin-bottom: 70px;
+
+      :last-child {
+        margin-bottom: 0px;
+      }
 
       .title {
         display: flex;
@@ -30,13 +35,17 @@ export const AcademicWrapper = styled.div`
 
         span {
           border-radius: 100%;
+          border: 1px solid ${(props) => props.theme.colors.secondary};
           height: 11px;
           width: 11px;
-          background: ${(props) => props.theme.colors.secondary};
           display: inline-block;
           margin-right: 15px;
-          box-shadow: rgba(4, 211, 97, 0.4) 0px 0px 10px 2px,
-            rgba(4, 211, 97, 0.4) 0px 30px 20px -30px;
+
+          &.complete {
+            background: ${(props) => props.theme.colors.secondary};
+            box-shadow: rgba(4, 211, 97, 0.4) 0px 0px 10px 2px,
+              rgba(4, 211, 97, 0.4) 0px 30px 20px -30px;
+          }
         }
       }
 
@@ -51,6 +60,13 @@ export const AcademicWrapper = styled.div`
         font-size: 21px;
         line-height: 1.5;
         color: #c2c2c2;
+        margin-left: 25px;
+        margin-bottom: 24px;
+      }
+
+      .length {
+        color: #c2c2c2;
+        font-size: 15px;
         margin-left: 25px;
       }
     }
