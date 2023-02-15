@@ -16,6 +16,16 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: #04d361;
+  }
+
+  ::selection {
+    color: black;
+    background: #04d361;
+  }
   
   a {
     color: unset;

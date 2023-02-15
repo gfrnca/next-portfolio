@@ -27,13 +27,15 @@ const Courses = () => {
         {/* FIAP */}
         <div className="course">
           <div className="title">
-            <span /> FIAP
+            <span /> Udemy
           </div>
           <p className="about">
-            Degree in <strong>Analysis and Development of Systems</strong>
+            React do Zero a Maestria (c/ hooks, router, API, Projetos)
           </p>
-          <p className="description">Just started it! (:</p>
-          <p className="length">Feb. 2023 - Today</p>
+          <p className="description">
+            Curso onde eu estou consolidando os princípios do React
+          </p>
+          <p className="length">Jan. 2023 - Today</p>
         </div>
       </div>
     </CoursesWrapper>
