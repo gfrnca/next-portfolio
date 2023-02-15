@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <div className="nav-links">
           <Link className="active" href={"#"}>
-            Home
+            About me
           </Link>
           <Link href={"#"}>Projects</Link>
           <Link href={"#"}>Contact</Link>

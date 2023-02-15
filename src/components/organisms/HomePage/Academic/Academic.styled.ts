@@ -17,8 +17,45 @@ export const AcademicWrapper = styled.div`
     }
   }
 
-  .formations {
-    .formation {
+  .selector {
+    width: 500px;
+    height: 60px;
+    background: #131314;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+
+    .academic-button {
+      border-radius: 8px;
+      flex: 1;
+      width: 250px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background: unset;
+      border: none;
+
+      &.active {
+        background: #050505;
+
+        p {
+          color: white !important;
+        }
+      }
+
+      p {
+        color: #c2c2c2;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .educations {
+    .education {
       padding: 0px 300px;
       margin-bottom: 70px;
 
@@ -45,6 +82,16 @@ export const AcademicWrapper = styled.div`
             background: ${(props) => props.theme.colors.secondary};
             box-shadow: rgba(4, 211, 97, 0.4) 0px 0px 10px 2px,
               rgba(4, 211, 97, 0.4) 0px 30px 20px -30px;
+
+            ::after {
+              content: "";
+              width: 2px;
+              height: 200px;
+              background: linear-gradient(180deg, #04d361, #09090a);
+              z-index: -1;
+              display: block;
+              margin-left: 3px;
+            }
           }
         }
       }

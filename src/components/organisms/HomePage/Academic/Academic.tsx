@@ -1,15 +1,35 @@
+// General
+import { useState } from "react";
+
+// CSS
 import { AcademicWrapper } from "./Academic.styled";
 
 const Academic = () => {
+  const [education, setEducation] = useState(true);
+
   return (
     <AcademicWrapper>
+      <div className="selector">
+        <button
+          onClick={() => setEducation(true)}
+          className={education ? "academic-button active" : "academic-button"}
+        >
+          <p>Education</p>
+        </button>
+        <button
+          onClick={() => setEducation(false)}
+          className={!education ? "academic-button active" : "academic-button"}
+        >
+          <p>Courses</p>
+        </button>
+      </div>
       <h2>
         Education<span>.</span>
       </h2>
 
-      <div className="formations">
+      <div className="educations">
         {/* ETEC */}
-        <div className="formation">
+        <div className="education">
           <div className="title">
             <span className="complete" /> ETEC Prof. Horácio Augusto da Silveira
           </div>
@@ -28,7 +48,7 @@ const Academic = () => {
         </div>
 
         {/* FIAP */}
-        <div className="formation">
+        <div className="education">
           <div className="title">
             <span /> FIAP
           </div>
