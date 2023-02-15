@@ -1,21 +1,20 @@
 // CSS
+import { CoursesWrapper } from "./Courses.styled";
 
-import { EducationsWrapper } from "./Educations.styled";
-
-const Educations = () => {
+const Courses = () => {
   return (
-    <EducationsWrapper>
+    <CoursesWrapper>
       <h2>
-        Education<span>.</span>
+        Courses<span>.</span>
       </h2>
 
-      <div className="educations">
+      <div className="courses">
         {/* ETEC */}
-        <div className="education">
+        <div className="course">
           <div className="title">
             <span className="complete" /> ETEC Prof. Horácio Augusto da Silveira
           </div>
-          <p className="course">
+          <p className="about">
             Integrated technical education in{" "}
             <strong>software development</strong>
           </p>
@@ -30,19 +29,19 @@ const Educations = () => {
         </div>
 
         {/* FIAP */}
-        <div className="education">
+        <div className="course">
           <div className="title">
             <span /> FIAP
           </div>
-          <p className="course">
+          <p className="about">
             Degree in <strong>Analysis and Development of Systems</strong>
           </p>
           <p className="description">Just started it! (:</p>
           <p className="length">Feb. 2023 - Today</p>
         </div>
       </div>
-    </EducationsWrapper>
+    </CoursesWrapper>
   );
 };
 
-export default Educations;
+export default Courses;
