@@ -11,7 +11,7 @@ export const CoursesWrapper = styled.div`
     }
   }
   .course {
-    padding: 0px 300px;
+    padding: 0px 6vw;
     margin-bottom: 70px;
 
     :last-child {

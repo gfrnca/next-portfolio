@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const background = require("../../../../../public/assets/background.svg");
+
 export const HeroWrapper = styled.div`
   // Animations
   @keyframes wave-animation {
@@ -34,6 +36,37 @@ export const HeroWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
+  position: relative;
+
+  .blobs {
+    overflow: hidden;
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .blob {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+
+    &.one {
+      width: 400px;
+      left: -350px;
+    }
+
+    &.two {
+      width: 400px;
+      right: -350px;
+    }
+
+    &.three {
+      width: 500px;
+      top: 800px;
+      left: 200px;
+    }
+  }
 
   p {
     font-size: 20px;
@@ -79,6 +112,10 @@ export const HeroWrapper = styled.div`
     margin-left: -30px;
     opacity: 0.5;
     z-index: -1;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .Typewriter {
@@ -93,6 +130,10 @@ export const HeroWrapper = styled.div`
         text-underline-offset: 10px;
         text-decoration-color: ${(props) => props.theme.colors.primary};
         color: ${(props) => props.theme.colors.text};
+      }
+
+      @media only screen and (max-width: 600px) {
+        font-size: 25px;
       }
     }
   }

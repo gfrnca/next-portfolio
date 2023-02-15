@@ -42,4 +42,8 @@ export default createGlobalStyle`
 
 export const Container = styled.div`
   padding: 0px 12vw;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0px 6vw;
+  }
 `;

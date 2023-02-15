@@ -9,8 +9,7 @@ export const AcademicWrapper = styled.div`
   flex-direction: column;
 
   .selector {
-    width: 500px;
-    height: 60px;
+    min-height: 60px;
     background: #131314;
     margin-bottom: 50px;
     border-radius: 8px;
@@ -21,7 +20,7 @@ export const AcademicWrapper = styled.div`
     .academic-button {
       border-radius: 8px;
       flex: 1;
-      width: 250px;
+      padding: 0px 3vw;
       height: 100%;
       display: flex;
       justify-content: center;
@@ -29,6 +28,7 @@ export const AcademicWrapper = styled.div`
       cursor: pointer;
       background: unset;
       border: none;
+      outline: none;
 
       &.active {
         background: #050505;

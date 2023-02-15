@@ -31,11 +31,25 @@ export const NavbarWrapper = styled.nav`
         color: ${(props) => props.theme.colors.secondary};
       }
     }
+
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font-size: 40px;
+      }
+    }
   }
 
   .nav-links {
     .active {
       color: white;
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
+    @media only screen and (max-width: 960px) {
+      display: none;
     }
   }
 
