@@ -12,20 +12,16 @@ const Courses = () => {
         {/* ETEC */}
         <div className="course">
           <div className="title">
-            <span className="complete" /> ETEC Prof. Horácio Augusto da Silveira
+            <span className="complete" /> Alura
           </div>
-          <p className="about">
-            Integrated technical education in{" "}
-            <strong>software development</strong>
-          </p>
+          <p className="about">JavaScript para Web: Crie páginas dinâmicas</p>
           <p className="description">
-            Place where I got involved with several projects including most
-            language scopes in a possible web, desktop or mobile application. I
-            also participated in the preparation of a{" "}
-            <strong>TCC (Final Work/ Final Paper)</strong>, where I used part of
-            my knowledge in Web Development in frameworks such as Angular.
+            I learned about optimized code that goes through all the buttons,
+            reducing code repetition and increasing the reusability and
+            maintainability of this code, among other things such as playing
+            audio.
           </p>
-          <p className="length">Feb. 2020 - Dec. 2022</p>
+          <p className="length">2023</p>
         </div>
 
         {/* FIAP */}
