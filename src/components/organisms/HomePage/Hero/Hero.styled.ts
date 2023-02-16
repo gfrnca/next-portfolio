@@ -112,6 +112,7 @@ export const HeroWrapper = styled.div`
     margin-left: -30px;
     opacity: 0.5;
     z-index: -1;
+    user-select: none;
 
     @media only screen and (max-width: 768px) {
       display: none;
