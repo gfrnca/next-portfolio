@@ -18,6 +18,8 @@ export const FooterWrapper = styled.footer`
     img {
       margin-top: -50px;
       transform: rotate(50deg);
+      user-select: none;
+      pointer-events: none;
     }
   }
 
