@@ -132,6 +132,10 @@ export const HeroWrapper = styled.div`
         color: ${(props) => props.theme.colors.text};
       }
 
+      span {
+        color: ${(props) => props.theme.colors.secondary};
+      }
+
       @media only screen and (max-width: 600px) {
         font-size: 25px;
       }

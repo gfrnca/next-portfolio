@@ -29,6 +29,7 @@ export const AcademicWrapper = styled.div`
       background: unset;
       border: none;
       outline: none;
+      transition: 0.3s all;
 
       &.active {
         background: #050505;

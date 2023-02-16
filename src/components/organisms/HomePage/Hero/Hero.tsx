@@ -65,10 +65,10 @@ const Hero = () => {
           <Typewriter
             options={{
               strings: [
-                "Hello, my name is <strong>Gabriel França</strong>!",
-                "Olá, meu nome é <strong>Gabriel França</strong>!",
-                "Bon jour, je m'appelle <strong>Gabriel França</strong>!",
-                "Hola, mi nombre es <strong>Gabriel França</strong>!",
+                "Hello, my name is <strong>Gabriel França</strong><span>!</span>",
+                "Olá, meu nome é <strong>Gabriel França</strong><span>!</span>",
+                "Bon jour, je m'appelle <strong>Gabriel França</strong><span>!</span>",
+                "Hola, mi nombre es <strong>Gabriel França</strong><span>!</span>",
               ],
               autoStart: true,
               loop: true,
@@ -87,7 +87,6 @@ const Hero = () => {
           endless possibilities that this field has to offer<span>.</span>
         </p>
         <Separator />
-        <Skills />
       </div>
     </HeroWrapper>
   );

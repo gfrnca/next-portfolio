@@ -5,12 +5,14 @@ import { HomePageWrapper } from "./HomePage.styled";
 // Components
 import Hero from "../../organisms/HomePage/Hero/Hero";
 import Academic from "../../organisms/HomePage/Academic/Academic";
+import Skills from "../../organisms/Skills/Skills";
 
 const HomePage = () => {
   return (
     <HomePageWrapper>
       <Container>
         <Hero />
+        <Skills />
       </Container>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path

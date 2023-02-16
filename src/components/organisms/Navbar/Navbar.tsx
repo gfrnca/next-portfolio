@@ -5,6 +5,9 @@ import Link from "next/link";
 import { Container } from "@/src/styles/global";
 import { NavbarWrapper } from "./Navbar.styled";
 
+// Links
+import { navLinks } from "../../../contants/index";
+
 const Navbar = () => {
   return (
     <Container className="container">
@@ -18,11 +21,9 @@ const Navbar = () => {
         </div>
 
         <div className="nav-links">
-          <Link className="active" href={"#"}>
-            About me
-          </Link>
-          <Link href={"#"}>Projects</Link>
-          <Link href={"#"}>Contact</Link>
+          {navLinks.map((link) => (
+            <Link href={"#"}>{link.name}</Link>
+          ))}
         </div>
       </NavbarWrapper>
     </Container>
