@@ -10,8 +10,8 @@ import { navLinks } from "../../../contants/index";
 
 const Navbar = () => {
   return (
-    <Container className="container">
-      <NavbarWrapper>
+    <NavbarWrapper>
+      <Container className="container">
         <div className="brand">
           <h1>
             <span className="brackets">{"</"}</span>gfrn<strong>c</strong>a
@@ -25,8 +25,8 @@ const Navbar = () => {
             <Link href={"#"}>{link.name}</Link>
           ))}
         </div>
-      </NavbarWrapper>
-    </Container>
+      </Container>
+    </NavbarWrapper>
   );
 };
 

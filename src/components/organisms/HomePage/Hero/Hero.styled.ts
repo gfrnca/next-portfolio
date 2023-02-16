@@ -84,7 +84,7 @@ export const HeroWrapper = styled.div`
       font-size: 28px;
 
       span {
-        color: ${(props) => props.theme.colors.secondary};
+        color: ${(props) => props.theme.colors.secondary.light};
       }
     }
 
@@ -133,7 +133,7 @@ export const HeroWrapper = styled.div`
       }
 
       span {
-        color: ${(props) => props.theme.colors.secondary};
+        color: ${(props) => props.theme.colors.secondary.light};
       }
 
       @media only screen and (max-width: 600px) {

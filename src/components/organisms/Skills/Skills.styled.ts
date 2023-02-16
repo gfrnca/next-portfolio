@@ -40,7 +40,8 @@ export const SkillsWrapper = styled.div`
           color: #c2c2c2;
           text-decoration: underline;
           text-decoration-thickness: 1px;
-          text-decoration-color: ${(props) => props.theme.colors.secondary};
+          text-decoration-color: ${(props) =>
+            props.theme.colors.secondary.light};
           text-underline-offset: 20px;
         }
       }

@@ -6,7 +6,10 @@ const theme = {
     supportBackground: "#09090a",
     text: "#ededed",
     primary: "#8257e5",
-    secondary: "#04d361",
+    secondary: {
+      light: "#04d361",
+      dark: "#013d1c",
+    },
   },
 };
 

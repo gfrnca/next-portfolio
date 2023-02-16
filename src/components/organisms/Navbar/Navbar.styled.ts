@@ -4,11 +4,16 @@ import styled from "styled-components";
 export const NavbarWrapper = styled.nav`
   width: 100%;
   height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
   margin-bottom: 60px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
 
   .brand {
     letter-spacing: 2px;
@@ -28,7 +33,7 @@ export const NavbarWrapper = styled.nav`
       }
 
       span {
-        color: ${(props) => props.theme.colors.secondary};
+        color: ${(props) => props.theme.colors.secondary.light};
       }
     }
 
