@@ -16,7 +16,7 @@ export const FooterWrapper = styled.footer`
     overflow: hidden;
 
     img {
-      margin-top: -50px;
+      margin-top: 20px;
       transform: rotate(50deg);
       user-select: none;
       pointer-events: none;
