@@ -76,7 +76,7 @@ export const ProjectsPageWrapper = styled.div`
         border-top-right-radius: 8px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-y: -50px;
+        background-position-y: -68px;
       }
 
       .project-content {
@@ -113,6 +113,26 @@ export const ProjectsPageWrapper = styled.div`
           flex-direction: row;
           gap: 10px;
           overflow: scroll;
+          padding-bottom: 20px;
+
+          ::-webkit-scrollbar-track {
+            padding: 2px 0;
+            background: transparent;
+          }
+
+          ::-webkit-scrollbar {
+            width: 10px;
+            height: 8px;
+          }
+
+          ::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: #4a4a53;
+          }
+
+          ::-webkit-scrollbar-corner {
+            background: transparent;
+          }
 
           .skill {
             height: 24px;
@@ -122,6 +142,8 @@ export const ProjectsPageWrapper = styled.div`
             padding: 8px;
             border-radius: 4px;
             background: #4a4a53;
+            pointer-events: none;
+            user-select: none;
           }
         }
       }

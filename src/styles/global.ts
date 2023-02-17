@@ -29,7 +29,22 @@ export default createGlobalStyle`
   }
 
   // Trackbar
-  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #2d1056;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #52cc62;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
   
   a {
     color: unset;

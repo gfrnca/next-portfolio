@@ -25,10 +25,11 @@ export const projects = [
         description: "A mini-blog containing functions like authentication, posts and friends.",
         finished: false,
         skills: [
+            'HTML5',
+            'CSS3',
             'React',
             'Typescript',
             'Firebase',
-            'CSS'
         ]
     }
 ]
