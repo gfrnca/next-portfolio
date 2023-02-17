@@ -30,20 +30,20 @@ export default createGlobalStyle`
 
   // Trackbar
   ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
   }
 
   ::-webkit-scrollbar-track {
-    background: #2d1056;
+    background: #000;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #52cc62;
+    background: #333;
     border-radius: 8px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #444;
   }
   
   a {
