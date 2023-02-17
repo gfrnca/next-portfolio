@@ -15,3 +15,11 @@ export const navLinks = [
         href: '/contact'
     }
 ]
+
+export const projects = [
+    {
+        id: "camel",
+        name: "Camel",
+        description: ""
+    }
+]
