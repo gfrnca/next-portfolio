@@ -38,6 +38,10 @@ export default createGlobalStyle`
     color: ${(props) => props.theme.colors.text};
     font: 400 16px Inter, sans-serif;
   }
+
+  main {
+    min-height: 100vh;
+  }
 `;
 
 export const Container = styled.div`

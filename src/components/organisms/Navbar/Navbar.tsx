@@ -1,5 +1,6 @@
 // General
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 // CSS
 import { Container } from "@/src/styles/global";
@@ -9,6 +10,10 @@ import { NavbarWrapper } from "./Navbar.styled";
 import { navLinks } from "../../../contants/index";
 
 const Navbar = () => {
+  const route = useRouter();
+
+  console.log(route.pathname);
+
   return (
     <NavbarWrapper>
       <Container className="container">
@@ -22,7 +27,12 @@ const Navbar = () => {
 
         <div className="nav-links">
           {navLinks.map((link) => (
-            <Link href={"#"}>{link.name}</Link>
+            <Link
+              className={route.pathname == link.href ? "active" : ""}
+              href={`${link.href}`}
+            >
+              {link.name}
+            </Link>
           ))}
         </div>
       </Container>

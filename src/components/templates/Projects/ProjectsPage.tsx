@@ -1,9 +1,12 @@
+import { Container } from "@/src/styles/global";
 import { ProjectsPageWrapper } from "./ProjectsPage.styled";
 
 const ProjectsPage = () => {
   return (
     <ProjectsPageWrapper>
-      <h1>Projects</h1>
+      <Container>
+        <h1>Projects</h1>
+      </Container>
     </ProjectsPageWrapper>
   );
 };
