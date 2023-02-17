@@ -53,7 +53,9 @@ const ProjectsPage = () => {
 
                 <div className="skills">
                   {project.skills.map((skill) => (
-                    <div className="skill">{skill}</div>
+                    <div className="skill">
+                      <p>{skill}</p>
+                    </div>
                   ))}
                 </div>
               </div>

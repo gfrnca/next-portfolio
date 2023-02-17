@@ -31,5 +31,19 @@ export const projects = [
             'Typescript',
             'Firebase',
         ]
+    },
+    {
+        id: "portfolio",
+        name: "portfolio",
+        title: "This portfolio",
+        subtitle: "Landing page",
+        description: "A landing page built to show my skills.",
+        finished: false,
+        skills: [
+            'HTML5',
+            'Styled Components',
+            'React',
+            'Typescript',
+        ]
     }
 ]

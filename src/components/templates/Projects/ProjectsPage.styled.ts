@@ -12,6 +12,7 @@ export const ProjectsPageWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+    gap: 20px;
 
     .title {
     }
@@ -37,6 +38,9 @@ export const ProjectsPageWrapper = styled.div`
   .projects-content {
     width: 100%;
     display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
 
     .project {
       width: 300px;
@@ -114,6 +118,7 @@ export const ProjectsPageWrapper = styled.div`
           gap: 10px;
           overflow: scroll;
           padding-bottom: 20px;
+          cursor: default !important;
 
           ::-webkit-scrollbar-track {
             padding: 2px 0;
@@ -135,7 +140,7 @@ export const ProjectsPageWrapper = styled.div`
           }
 
           .skill {
-            height: 24px;
+            height: 30px;
             width: fit-content;
             display: flex;
             align-items: center;
@@ -144,6 +149,11 @@ export const ProjectsPageWrapper = styled.div`
             background: #4a4a53;
             pointer-events: none;
             user-select: none;
+
+            p {
+              white-space: nowrap;
+              display: inline-block;
+            }
           }
         }
       }
