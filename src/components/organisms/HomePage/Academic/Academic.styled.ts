@@ -9,6 +9,7 @@ export const AcademicWrapper = styled.div`
   flex-direction: column;
 
   .selector {
+    min-height: 350px;
     min-height: 60px;
     background: #131314;
     margin-bottom: 50px;
@@ -20,6 +21,8 @@ export const AcademicWrapper = styled.div`
     .academic-button {
       border-radius: 8px;
       flex: 1;
+      max-width: 190px;
+
       padding: 0px 3vw;
       height: 100%;
       display: flex;
@@ -33,15 +36,17 @@ export const AcademicWrapper = styled.div`
 
       &.active {
         background: #050505;
-
-        p {
-          color: white !important;
-        }
       }
 
       p {
         color: #c2c2c2;
         font-size: 20px;
+        display: flex;
+        flex-direction: row;
+
+        svg {
+          margin-right: 10px;
+        }
       }
     }
   }

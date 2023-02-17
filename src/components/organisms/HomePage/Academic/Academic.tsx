@@ -1,4 +1,6 @@
 // General
+import { faGraduationCap, faBook } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 // CSS
@@ -18,13 +20,19 @@ const Academic = () => {
           onClick={() => setEducation(true)}
           className={education ? "academic-button active" : "academic-button"}
         >
-          <p>Education</p>
+          <p>
+            <FontAwesomeIcon icon={faGraduationCap} />
+            Education
+          </p>
         </button>
         <button
           onClick={() => setEducation(false)}
           className={!education ? "academic-button active" : "academic-button"}
         >
-          <p>Courses</p>
+          <p>
+            <FontAwesomeIcon icon={faBook} />
+            Courses
+          </p>
         </button>
       </div>
 
