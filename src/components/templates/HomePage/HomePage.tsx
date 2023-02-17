@@ -10,7 +10,7 @@ import Skills from "../../organisms/Skills/Skills";
 const HomePage = () => {
   return (
     <HomePageWrapper>
-      <Container>
+      <Container className="container">
         <Hero />
         <Skills />
       </Container>
