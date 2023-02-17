@@ -17,13 +17,15 @@ const Navbar = () => {
   return (
     <NavbarWrapper>
       <Container className="container">
-        <div className="brand">
-          <h1>
-            <span className="brackets">{"</"}</span>gfrn<strong>c</strong>a
-            <span className="brackets">{">"}</span>
-            <span>.</span>
-          </h1>
-        </div>
+        <Link href="/">
+          <div className="brand">
+            <h1>
+              <span className="brackets">{"</"}</span>gfrn<strong>c</strong>a
+              <span className="brackets">{">"}</span>
+              <span>.</span>
+            </h1>
+          </div>
+        </Link>
 
         <div className="nav-links">
           {navLinks.map((link) => (
