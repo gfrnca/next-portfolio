@@ -27,14 +27,14 @@ export const EducationsWrapper = styled.div`
 
       span {
         border-radius: 100%;
-        border: 1px solid ${(props) => props.theme.colors.secondary};
+        border: 1px solid ${(props) => props.theme.colors.secondary.light};
         height: 11px;
         width: 11px;
         display: inline-block;
         margin-right: 15px;
 
         &.complete {
-          background: ${(props) => props.theme.colors.secondary};
+          background: ${(props) => props.theme.colors.secondary.light};
           box-shadow: rgba(4, 211, 97, 0.4) 0px 0px 10px 2px,
             rgba(4, 211, 97, 0.4) 0px 30px 20px -30px;
 

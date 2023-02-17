@@ -38,15 +38,15 @@ export const FooterWrapper = styled.footer`
       flex-direction: column;
 
       a {
-        font-size: 30px;
-        font-weight: 600;
+        font-size: 24px;
+        font-weight: 400;
         margin-bottom: 20px;
-        color: #fff;
+        color: #555;
         background-image: linear-gradient(
           to right,
           #8257e5,
           #8257e5 50%,
-          #000 50%
+          #555 50%
         );
         background-size: 200% 100%;
         background-position: -100%;
@@ -54,7 +54,7 @@ export const FooterWrapper = styled.footer`
         padding: 5px 0;
         position: relative;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: #fff;
+        -webkit-text-fill-color: #555;
         transition: all 0.3s ease-in-out;
       }
 
