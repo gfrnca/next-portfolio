@@ -93,7 +93,7 @@ export const ProjectsPageWrapper = styled.div`
           margin-bottom: 14px;
 
           .title {
-            font-size: 20px;
+            font-size: 13px;
           }
 
           .subtitle {
@@ -112,6 +112,7 @@ export const ProjectsPageWrapper = styled.div`
           display: flex;
           flex-direction: row;
           gap: 10px;
+          overflow: scroll;
 
           .skill {
             height: 24px;

@@ -9,6 +9,9 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 // Assets
 import camel from "../../../../public/assets/projects/camel.png";
 
+// Constants
+import { projects } from "@/src/contants";
+
 const ProjectsPage = () => {
   return (
     <ProjectsPageWrapper>
@@ -22,36 +25,40 @@ const ProjectsPage = () => {
         </div>
 
         <div className="projects-content">
-          <div className="project">
-            <div className="label">
-              <div className="advice">Not finished</div>
-            </div>
-            <div
-              className="project-thumbnail"
-              style={{ backgroundImage: `url(/assets/projects/camel.png)` }}
-            ></div>
-            <div className="project-content">
-              <div className="identity">
-                <div className="title">
-                  <h1></h1>Camel
-                </div>
-                <div className="subtitle">
-                  <h2>Mini-blog</h2>
-                </div>
+          {projects.map((project) => (
+            <div className="project">
+              <div className="label">
+                {!project.finished ? (
+                  <div className="advice">Not finished</div>
+                ) : null}
               </div>
-              <div className="description">
-                <p>
-                  A mini-blog containing functions like authentication, posts
-                  and friends.
-                </p>
-              </div>
+              <div
+                className="project-thumbnail"
+                style={{
+                  backgroundImage: `url(/assets/projects/${project.name}.png)`,
+                }}
+              ></div>
+              <div className="project-content">
+                <div className="identity">
+                  <div className="title">
+                    <h1>{project.title}</h1>
+                  </div>
+                  <div className="subtitle">
+                    <h2>{project.subtitle}</h2>
+                  </div>
+                </div>
+                <div className="description">
+                  <p>{project.description}</p>
+                </div>
 
-              <div className="skills">
-                <div className="skill">React</div>
-                <div className="skill">Typescript</div>
+                <div className="skills">
+                  {project.skills.map((skill) => (
+                    <div className="skill">{skill}</div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </Container>
     </ProjectsPageWrapper>

@@ -19,7 +19,16 @@ export const navLinks = [
 export const projects = [
     {
         id: "camel",
-        name: "Camel",
-        description: ""
+        name: "camel",
+        title: "Camel",
+        subtitle: "Mini-blog",
+        description: "A mini-blog containing functions like authentication, posts and friends.",
+        finished: false,
+        skills: [
+            'React',
+            'Typescript',
+            'Firebase',
+            'CSS'
+        ]
     }
 ]

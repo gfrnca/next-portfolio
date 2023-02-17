@@ -17,7 +17,8 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  ::-moz-selection { /* Code for Firefox */
+  // Selection 
+  ::-moz-selection {
     color: black;
     background: #04d361;
   }
@@ -26,6 +27,9 @@ export default createGlobalStyle`
     color: black;
     background: #04d361;
   }
+
+  // Trackbar
+  
   
   a {
     color: unset;
