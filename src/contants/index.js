@@ -16,6 +16,14 @@ export const navLinks = [
     }
 ]
 
+export const skills = [
+    'HTML5',
+    'CSS3',
+    'React',
+    'Typescript',
+    'Firebase',
+]
+
 export const projects = [
     {
         id: "camel",
