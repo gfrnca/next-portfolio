@@ -1,5 +1,5 @@
 import Head from "next/head";
-import ProjectsPage from "../components/templates/Projects/ProjectsPage";
+import ProjectsPage from "../components/templates/ProjectsPage/ProjectsPage";
 
 export default function Projects() {
   return (
