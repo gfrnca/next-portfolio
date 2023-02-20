@@ -86,6 +86,10 @@ export const HeroWrapper = styled.div`
       span {
         color: ${(props) => props.theme.colors.secondary.light};
       }
+
+      @media only screen and (max-width: 768px) {
+        font-size: 20px;
+      }
     }
 
     .title {

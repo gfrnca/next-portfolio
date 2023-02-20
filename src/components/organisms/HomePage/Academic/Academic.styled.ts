@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const AcademicWrapper = styled.div`
   width: 100%;
-  height: 1000px;
   background: ${(props) => props.theme.colors.supportBackground};
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 80px;
 
   .selector {
     min-height: 350px;

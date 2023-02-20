@@ -5,7 +5,7 @@ export const ProjectsHeaderWrapper = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   gap: 20px;
 
   .title {
