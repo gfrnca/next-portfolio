@@ -16,6 +16,9 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   const menuHandler = () => {
+    menu
+      ? (document.body.style.overflow = "initial")
+      : (document.body.style.overflow = "hidden");
     menu ? setMenu(false) : setMenu(true);
   };
 
