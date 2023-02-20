@@ -58,7 +58,7 @@ export const ProjectsListWrapper = styled.div`
   }
 
   .project-content {
-    padding: 10px;
+    padding: 15px;
     min-height: 177px;
     background: #0a0a0b;
     border-bottom-left-radius: 8px;
@@ -74,7 +74,8 @@ export const ProjectsListWrapper = styled.div`
       margin-bottom: 14px;
 
       .title {
-        font-size: 13px;
+        font-size: 20px;
+        font-weight: 600;
       }
 
       .subtitle {

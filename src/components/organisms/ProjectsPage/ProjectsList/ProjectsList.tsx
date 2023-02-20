@@ -14,6 +14,12 @@ const ProjectsList = ({ projects }: ProjectListProps) => {
       <ul>
         {projects.map((project) => (
           <li key={project.name}>
+            {!project.finished ? (
+              <div className="label">
+                <div className="advice">Not finished</div>
+              </div>
+            ) : null}
+
             <div
               className="project-thumbnail"
               style={{
