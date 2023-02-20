@@ -9,7 +9,6 @@ export const AcademicWrapper = styled.div`
   padding-bottom: 80px;
 
   .selector {
-    min-height: 350px;
     min-height: 60px;
     background: #131314;
     margin-bottom: 50px;
@@ -22,9 +21,7 @@ export const AcademicWrapper = styled.div`
       border-radius: 8px;
       flex: 1;
       max-width: 190px;
-
       padding: 0px 3vw;
-      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
