@@ -7,7 +7,7 @@ export const EducationsWrapper = styled.div`
     text-align: center;
 
     span {
-      color: ${(props) => props.theme.colors.secondary};
+      color: ${(props) => props.theme.colors.secondary.light};
     }
   }
   .education {

@@ -56,15 +56,47 @@ export const NavbarWrapper = styled.nav`
     @media only screen and (max-width: 960px) {
       display: none;
     }
+
+    a {
+      margin-right: 70px;
+      font-size: 20px;
+      color: #737380;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
   }
 
-  .nav-links a {
-    margin-right: 70px;
-    font-size: 20px;
-    color: #737380;
+  .nav-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
-    &:last-child {
-      margin-right: 0px;
+    .menu {
+      width: 50px;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      padding: 15px 10px;
+      justify-content: space-between;
+
+      .stripe {
+        width: 30px;
+        height: 1px;
+        background: white;
+        transition: 0.2s;
+
+        &.open {
+          transform: rotate(120deg);
+        }
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      display: none;
     }
   }
 `;

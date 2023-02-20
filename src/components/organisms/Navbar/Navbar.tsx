@@ -8,11 +8,16 @@ import { NavbarWrapper } from "./Navbar.styled";
 
 // Links
 import { navLinks } from "../../../contants/index";
+import Menu from "../Menu/Menu";
+import { useState } from "react";
 
 const Navbar = () => {
   const route = useRouter();
+  const [menu, setMenu] = useState(false);
 
-  console.log(route.pathname);
+  const menuHandler = () => {
+    menu ? setMenu(false) : setMenu(true);
+  };
 
   return (
     <NavbarWrapper>
@@ -37,7 +42,28 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
+
+        <div className="nav-menu">
+          <div className="menu" onClick={menuHandler}>
+            <div
+              className="stripe"
+              style={
+                menu
+                  ? { transform: "rotate(135deg)", position: "absolute" }
+                  : {}
+              }
+            />
+            <div className="stripe" style={menu ? { display: "none" } : {}} />
+            <div
+              className="stripe"
+              style={
+                menu ? { transform: "rotate(45deg)", position: "absolute" } : {}
+              }
+            />
+          </div>
+        </div>
       </Container>
+      {menu && <Menu />}
     </NavbarWrapper>
   );
 };
