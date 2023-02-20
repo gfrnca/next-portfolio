@@ -5,6 +5,7 @@ export const NavbarWrapper = styled.nav`
   width: 100%;
   height: 90px;
   margin-bottom: 60px;
+  overflow: hidden;
 
   .container {
     display: flex;

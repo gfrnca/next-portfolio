@@ -1,5 +1,4 @@
 // CSS
-
 import { MenuWrapper } from "./Menu.styled";
 
 const Menu = () => {
