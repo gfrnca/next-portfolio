@@ -38,6 +38,7 @@ const Navbar = () => {
         <div className="nav-links">
           {navLinks.map((link) => (
             <Link
+              key={link.id}
               className={route.pathname == link.href ? "active" : ""}
               href={`${link.href}`}
             >

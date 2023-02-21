@@ -9,6 +9,7 @@ export const FooterWrapper = styled.footer`
   justify-content: center;
   flex-direction: row;
   position: relative;
+  margin-top: 80px;
 
   .background {
     height: 350px;

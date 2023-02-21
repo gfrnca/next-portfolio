@@ -4,6 +4,9 @@ const nextConfig = {
 }
 
 module.exports = {
+  compiler: {
+    styledComponents: true
+  },
   reactStrictMode: false,
   webpack5: true,
   webpack: (config) => {
