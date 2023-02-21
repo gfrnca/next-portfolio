@@ -61,31 +61,31 @@ export const MenuWrapper = styled.div`
       -webkit-background-clip: text;
       -webkit-text-fill-color: #555;
       transition: all 0.3s ease-in-out;
-    }
 
-    li:before {
-      content: "";
-      background: #8257e5;
-      display: block;
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 0;
-      height: 3px;
-      transition: all 0.3s ease-in-out;
-    }
+      li:before {
+        content: "";
+        background: #8257e5;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
 
-    li:hover {
-      -webkit-text-fill-color: transparent;
-      background-position: 0;
-    }
+      li:hover {
+        -webkit-text-fill-color: transparent;
+        background-position: 0;
+      }
 
-    li:hover::before {
-      width: 100%;
-    }
+      li:hover::before {
+        width: 100%;
+      }
 
-    &:last-child {
-      margin-bottom: 0px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
   }
 `;

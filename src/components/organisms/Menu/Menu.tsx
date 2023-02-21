@@ -1,9 +1,27 @@
+// General
+import { useRouter } from "next/router";
+import Link from "next/link";
+import React, { Dispatch, FC, SetStateAction } from "react";
+
 // CSS
-import { navLinks } from "@/src/contants";
 import { Container } from "@/src/styles/global";
 import { MenuWrapper } from "./Menu.styled";
 
-const Menu = () => {
+// Links
+import { navLinks } from "@/src/contants";
+import { event } from "jquery";
+
+interface Props {
+  setMenu: Dispatch<SetStateAction<boolean>>;
+}
+
+const Menu: FC<Props> = (props: Props) => {
+  const route = useRouter();
+
+  const closeMenu = () => {
+    setMenu(false);
+  };
+
   return (
     <MenuWrapper>
       <Container>
@@ -15,7 +33,11 @@ const Menu = () => {
 
         <ul>
           {navLinks.map((link) => (
-            <li key={link.id}>{link.name}</li>
+            <Link onClick={closeMenu} key={link.id} href={link.href}>
+              <li className={route.pathname == link.href ? "active" : ""}>
+                {link.name}
+              </li>
+            </Link>
           ))}
         </ul>
       </Container>
@@ -24,3 +46,6 @@ const Menu = () => {
 };
 
 export default Menu;
+function setMenu(arg0: boolean) {
+  throw new Error("Function not implemented.");
+}

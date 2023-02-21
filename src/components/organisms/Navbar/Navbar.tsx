@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
         </div>
       </Container>
-      {menu && <Menu />}
+      {menu && <Menu setMenu={setMenu} />}
     </NavbarWrapper>
   );
 };
