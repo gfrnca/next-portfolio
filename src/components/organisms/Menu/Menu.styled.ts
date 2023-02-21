@@ -62,6 +62,11 @@ export const MenuWrapper = styled.div`
       -webkit-text-fill-color: #555;
       transition: all 0.3s ease-in-out;
 
+      &.active {
+        color: #fff;
+        -webkit-text-fill-color: #fff;
+      }
+
       li:before {
         content: "";
         background: #8257e5;

@@ -6,6 +6,7 @@ export const AcademicWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 100px;
 
   .selector {
     min-height: 60px;
