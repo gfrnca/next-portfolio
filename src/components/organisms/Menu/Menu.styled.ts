@@ -24,6 +24,7 @@ export const MenuWrapper = styled.div`
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    font-size: 21px;
 
     h2 {
       span {
@@ -43,7 +44,7 @@ export const MenuWrapper = styled.div`
     justify-content: center;
 
     li {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 400;
       margin-bottom: 20px;
       color: #555;
