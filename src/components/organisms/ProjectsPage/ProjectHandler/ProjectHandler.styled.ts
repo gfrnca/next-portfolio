@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 export const ProjectHandlerWrapper = styled.div`
+  // Animations
+  @keyframes bottom-to-top {
+    100% {
+      transform: translate(-50%, -10%);
+      opacity: 0.99;
+    }
+  }
+
   width: 800px;
   height: 400px;
   background: #222226;
@@ -8,15 +16,15 @@ export const ProjectHandlerWrapper = styled.div`
   color: ${(props) => props.theme.colors.text};
   position: absolute;
   padding: 50px;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
+  opacity: 0;
   z-index: 99;
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: default;
-  margin-top: -20px;
+  animation: bottom-to-top 0.4s ease forwards;
 
   .close {
     position: absolute;
