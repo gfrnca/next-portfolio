@@ -6,5 +6,5 @@ export const ProjectsPageWrapper = styled.div`
     flex-direction: column;
   }
 
-  padding-bottom: 60px;
+  padding-bottom: 200px;
 `;

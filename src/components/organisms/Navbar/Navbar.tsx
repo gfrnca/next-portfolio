@@ -7,7 +7,7 @@ import { Container } from "@/src/styles/global";
 import { NavbarWrapper } from "./Navbar.styled";
 
 // Links
-import { navLinks } from "../../../contants/index";
+import { navLinks } from "../../contants/index";
 import Menu from "../Menu/Menu";
 import { useState } from "react";
 

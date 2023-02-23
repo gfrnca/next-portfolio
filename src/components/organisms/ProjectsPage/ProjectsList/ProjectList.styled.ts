@@ -12,7 +12,7 @@ export const ProjectsListWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    gap: 80px;
+    gap: 120px;
 
     li {
       list-style: none;
@@ -55,16 +55,18 @@ export const ProjectsListWrapper = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -68px;
+    min-height: 150px;
   }
 
   .project-content {
     padding: 15px;
-    min-height: 177px;
+    min-height: 237px;
     background: #0a0a0b;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     flex-direction: column;
     display: flex;
+    flex: 0.1;
 
     .identity {
       display: flex;
@@ -87,6 +89,7 @@ export const ProjectsListWrapper = styled.div`
     .description {
       font-size: 14px;
       color: #b1b1b8;
+      padding-bottom: 10px;
     }
 
     .skills {

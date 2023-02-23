@@ -32,10 +32,10 @@ export const projectsList: Project[] = [
     name: "RX6",
     subtitle: "Landing Page",
     description:
-      "The goal of this website is to show potential clients how our services work and how they can be implemented on their own servers.",
+      "The goal of this website is to show potential RX6 clients how our services work and how they can be implemented on their own servers.",
     languages: ["HTML5", "Styled Components", "React", "Next.js", "Typescript"],
     github: "https://github.com/gfrnca/NextRX6Web",
     deploy: "https://rx6.vercel.app/",
-    finished: false,
+    finished: true,
   },
 ];

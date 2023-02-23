@@ -5,7 +5,7 @@ import { useState } from "react";
 import { ProjectsListWrapper } from "./ProjectList.styled";
 
 // Interface
-import { Project } from "@/src/components/templates/ProjectsPage/projects";
+import { Project } from "@/src/components/contants/projects";
 import ProjectHandler from "../ProjectHandler/ProjectHandler";
 
 interface ProjectListProps {

@@ -11,7 +11,7 @@ import ProjectCard from "../../organisms/ProjectsPage/ProjectsList/ProjectsList"
 import ProjectsList from "../../organisms/ProjectsPage/ProjectsList/ProjectsList";
 
 // Data
-import { projectsList } from "./projects";
+import { projectsList } from "../../contants/projects";
 import ProjectHandler from "../../organisms/ProjectsPage/ProjectHandler/ProjectHandler";
 
 const ProjectsPage = () => {
