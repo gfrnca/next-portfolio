@@ -1,7 +1,16 @@
-// CSS
-
+// General
 import { Dispatch, SetStateAction } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// CSS
 import { ProjectHandlerWrapper } from "./ProjectHandler.styled";
+
+// Font Awesome
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faX,
+} from "@fortawesome/free-solid-svg-icons";
 
 interface ProjectHandlerProps {
   project: any;
@@ -13,14 +22,30 @@ const ProjectHandler = ({ project, setShowProject }: ProjectHandlerProps) => {
 
   return (
     <ProjectHandlerWrapper>
+      <button className="close" onClick={() => setShowProject(false)}>
+        <FontAwesomeIcon icon={faX} />
+      </button>
       <div className="title">
         <h1>{project.name}</h1>
       </div>
 
       <div className="description">{project.description}</div>
 
-      <div className="button">
-        <button onClick={() => setShowProject(false)}>CLOSE</button>
+      <div className="buttons">
+        <button>
+          <FontAwesomeIcon icon={faGithub} />
+          Github
+        </button>
+        <button>
+          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+          Deploy
+        </button>
+      </div>
+
+      <div className="skills">
+        {project.languages.map((skill: any) => (
+          <div className="skill">{skill}</div>
+        ))}
       </div>
     </ProjectHandlerWrapper>
   );
