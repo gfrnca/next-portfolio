@@ -31,8 +31,6 @@ const ProjectsPage = () => {
       <Container>
         <ProjectsHeader setSearch={handleSearch} />
 
-        <ProjectHandler />
-
         <ProjectsList projects={projects} />
       </Container>
     </ProjectsPageWrapper>
