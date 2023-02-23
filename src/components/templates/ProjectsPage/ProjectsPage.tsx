@@ -12,6 +12,7 @@ import ProjectsList from "../../organisms/ProjectsPage/ProjectsList/ProjectsList
 
 // Data
 import { projectsList } from "./projects";
+import ProjectHandler from "../../organisms/ProjectsPage/ProjectHandler/ProjectHandler";
 
 const ProjectsPage = () => {
   const [projects, setProjects] = useState(projectsList);
@@ -29,6 +30,8 @@ const ProjectsPage = () => {
     <ProjectsPageWrapper>
       <Container>
         <ProjectsHeader setSearch={handleSearch} />
+
+        <ProjectHandler />
 
         <ProjectsList projects={projects} />
       </Container>
