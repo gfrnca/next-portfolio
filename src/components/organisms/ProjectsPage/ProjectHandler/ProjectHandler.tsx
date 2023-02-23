@@ -1,6 +1,7 @@
 // General
 import { Dispatch, SetStateAction } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 // CSS
 import { ProjectHandlerWrapper } from "./ProjectHandler.styled";
@@ -32,14 +33,19 @@ const ProjectHandler = ({ project, setShowProject }: ProjectHandlerProps) => {
       <div className="description">{project.description}</div>
 
       <div className="buttons">
-        <button>
-          <FontAwesomeIcon icon={faGithub} />
-          Github
-        </button>
-        <button>
-          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-          Deploy
-        </button>
+        <Link href={project.github} target="_blank">
+          <button>
+            <FontAwesomeIcon icon={faGithub} />
+            Github
+          </button>
+        </Link>
+
+        <Link href={project.deploy} target="_blank">
+          <button>
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            Deploy
+          </button>
+        </Link>
       </div>
 
       <div className="skills">
