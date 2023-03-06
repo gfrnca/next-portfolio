@@ -5,7 +5,7 @@ import { useState } from "react";
 import { ProjectsListWrapper } from "./ProjectList.styled";
 
 // Interface
-import { Project } from "@/src/components/contants/projects";
+import { Project } from "@/src/contants/projects";
 import ProjectHandler from "../ProjectHandler/ProjectHandler";
 
 interface ProjectListProps {
@@ -17,7 +17,7 @@ const ProjectsList = ({ projects }: ProjectListProps) => {
   const [showProject, setShowProject] = useState(false);
 
   const projectInfoHandler = (project: any) => {
-    console.log(project);
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setShowProject(true);
 
     return setProject(project);

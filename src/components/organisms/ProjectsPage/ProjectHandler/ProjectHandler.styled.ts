@@ -9,8 +9,6 @@ export const ProjectHandlerWrapper = styled.div`
     }
   }
 
-  width: 800px;
-  height: 400px;
   background: #222226;
   border-radius: 8px;
   color: ${(props) => props.theme.colors.text};
@@ -52,6 +50,7 @@ export const ProjectHandlerWrapper = styled.div`
     display: flex;
     gap: 60px;
     margin-top: 60px;
+    margin-bottom: 30px;
 
     button {
       padding: 8px 20px;
@@ -82,6 +81,8 @@ export const ProjectHandlerWrapper = styled.div`
   .skills {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
     margin-top: auto;
 
@@ -104,5 +105,9 @@ export const ProjectHandlerWrapper = styled.div`
         opacity: 1;
       }
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 360px;
   }
 `;
