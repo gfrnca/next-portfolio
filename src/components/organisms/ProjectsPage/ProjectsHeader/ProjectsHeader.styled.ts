@@ -8,13 +8,17 @@ export const ProjectsHeaderWrapper = styled.header`
   margin-bottom: 100px;
   gap: 20px;
 
-  .title {
-  }
-
   .search-bar {
+    display: flex;
+    align-items: center;
+
     .icon {
       margin-right: 10px;
       color: #757575;
+
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
     }
 
     input {
@@ -23,6 +27,8 @@ export const ProjectsHeaderWrapper = styled.header`
       outline: none;
       border-radius: 8px;
       padding: 10px;
+      flex: 1;
+      display: flex;
       color: white;
       font-family: Inter;
     }
