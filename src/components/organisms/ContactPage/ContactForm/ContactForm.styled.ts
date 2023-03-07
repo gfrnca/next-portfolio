@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const ContactFormWrapper = styled.form `
-    width: 500px;
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 540px;
+    gap: 40px;
 `

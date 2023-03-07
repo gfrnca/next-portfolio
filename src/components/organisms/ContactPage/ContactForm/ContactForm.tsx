@@ -5,6 +5,7 @@ const ContactForm = () => {
   return (
     <ContactFormWrapper>
         <ContactInput label="Nome" type="text" />
+        <ContactInput label="E-mail" type="email" />
     </ContactFormWrapper>
   )
 }
