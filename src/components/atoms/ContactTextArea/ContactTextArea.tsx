@@ -1,10 +1,14 @@
 import { InputLabel } from "../ContactInput/ContactInput.styled"
 import { TextAreaControl, TextAreaWrapper } from "./ContactTextArea.styled"
 
-const ContactTextArea = () => {
+interface TextAreaProps {
+  label: string;
+}
+
+const ContactTextArea = ({ label }: TextAreaProps) => {
   return (
     <TextAreaWrapper>
-      <InputLabel>Teste</InputLabel>
+      <InputLabel>{label}</InputLabel>
       <TextAreaControl />
     </TextAreaWrapper>
   )

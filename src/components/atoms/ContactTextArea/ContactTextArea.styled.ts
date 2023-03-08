@@ -15,6 +15,8 @@ export const TextAreaControl = styled.textarea `
     background: #0a0a0b;
     transition: 0.2s all ease;
     font-size: 16px;
+    min-height: 200px;
+    resize: none;
 
     &:focus {
         outline: 1px solid ${props => props.theme.colors.secondary.light};
