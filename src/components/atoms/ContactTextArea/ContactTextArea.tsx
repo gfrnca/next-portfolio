@@ -1,6 +1,12 @@
+import { InputLabel } from "../ContactInput/ContactInput.styled"
+import { TextAreaControl, TextAreaWrapper } from "./ContactTextArea.styled"
+
 const ContactTextArea = () => {
   return (
-    <div>ContactTextArea</div>
+    <TextAreaWrapper>
+      <InputLabel>Teste</InputLabel>
+      <TextAreaControl />
+    </TextAreaWrapper>
   )
 }
 
