@@ -6,5 +6,9 @@ export const SubmitButton = styled.button `
     border: none;
     background: ${props => props.theme.colors.secondary.light}; 
     cursor: pointer;
+    transition: 0.2s all;
 
+    &:hover {
+        opacity: 0.9;
+    }
 `
