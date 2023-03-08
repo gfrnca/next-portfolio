@@ -1,8 +1,13 @@
+// General
+import { use, useState } from "react"
+
+// CSS
+import { ContactFormWrapper } from "./ContactForm.styled"
+
+// Components
 import { SubmitButton } from "@/src/components/atoms/Buttons/Buttons.styled"
 import ContactInput from "@/src/components/atoms/ContactInput/ContactInput"
 import ContactTextArea from "@/src/components/atoms/ContactTextArea/ContactTextArea"
-import { use, useState } from "react"
-import { ContactFormWrapper } from "./ContactForm.styled"
 
 const ContactForm = () => {
   // Name fill status
