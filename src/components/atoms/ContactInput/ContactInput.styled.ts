@@ -21,6 +21,7 @@ export const InputControl = styled.input `
     font-size: 16px;
 
     &:focus {
+        padding: 15px;
         outline: 1px solid ${props => props.theme.colors.secondary.light};
     }
 `

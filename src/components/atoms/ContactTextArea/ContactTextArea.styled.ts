@@ -17,8 +17,10 @@ export const TextAreaControl = styled.textarea `
     font-size: 16px;
     min-height: 200px;
     resize: none;
+    font-family: Inter;
 
     &:focus {
+        padding: 15px;
         outline: 1px solid ${props => props.theme.colors.secondary.light};
     }
 `

@@ -3,13 +3,14 @@ import { TextAreaControl, TextAreaWrapper } from "./ContactTextArea.styled"
 
 interface TextAreaProps {
   label: string;
+  placeholder?: string;
 }
 
-const ContactTextArea = ({ label }: TextAreaProps) => {
+const ContactTextArea = ({ label, placeholder }: TextAreaProps) => {
   return (
     <TextAreaWrapper>
       <InputLabel>{label}</InputLabel>
-      <TextAreaControl />
+      <TextAreaControl placeholder={placeholder} />
     </TextAreaWrapper>
   )
 }

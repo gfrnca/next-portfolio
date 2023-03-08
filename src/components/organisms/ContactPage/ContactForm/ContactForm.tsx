@@ -13,7 +13,7 @@ const ContactForm = () => {
         <ContactInput label="E-mail" type="email" placeholder="Your best e-mail" />
         
         {/* Message */}
-        <ContactTextArea label="Message" />
+        <ContactTextArea placeholder="What you need to say?" label="Message" />
 
         {/* Submit Button */}
         <SubmitButton>Submit</SubmitButton>
