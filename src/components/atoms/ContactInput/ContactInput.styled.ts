@@ -20,6 +20,10 @@ export const InputControl = styled.input `
     transition: 0.2s all ease;
     font-size: 16px;
 
+    &.filled {
+        outline: 1px solid ${props => props.theme.colors.secondary.light};
+    }
+
     &:focus {
         padding: 15px;
         outline: 1px solid ${props => props.theme.colors.secondary.light};
