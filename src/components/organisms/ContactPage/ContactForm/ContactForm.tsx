@@ -10,6 +10,9 @@ import ContactInput from "@/src/components/atoms/ContactInput/ContactInput"
 import ContactTextArea from "@/src/components/atoms/ContactTextArea/ContactTextArea"
 
 const ContactForm = () => {
+  // Submit Button status
+  const [submitButtonStatus, setSubmitButtonStatus] = useState(false);
+
   // Name fill status
   const [nameStatus, setNameStatus] = useState(false);
 
@@ -28,19 +31,39 @@ const ContactForm = () => {
     }
   }
 
+  const checkErrors = () => {
+    if (nameStatus && emailStatus) {
+      setSubmitButtonStatus(true);
+      console.log(submitButtonStatus)
+    } else {
+      setSubmitButtonStatus(false)
+      console.log(submitButtonStatus)
+    }
+  }
+
+  // Handle submit
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    if (nameStatus && emailStatus) {
+      console.log('teste')
+    }
+  }
+
   return (
     <ContactFormWrapper>
         {/* Name */}
-        <ContactInput className={nameStatus ? 'filled' : ''} onChange={(e) => {e.target.value.length > 3 && setNameStatus(true)}} label="Name" type="text" placeholder="How you want to be called?" />
+        <ContactInput className={nameStatus ? 'filled' : ''} onChange={(e) => {e.target.value.length > 3 ? setNameStatus(true) : setNameStatus(false); checkErrors()}} label="Name" type="text" placeholder="How you want to get called?" />
 
         {/* E-mail */}
-        <ContactInput className={emailStatus ? 'filled' : ''} onChange={(e) => checkEmail(e.target.value)} label="E-mail" type="email" placeholder="Your best e-mail" />
+        <ContactInput className={emailStatus ? 'filled' : ''} onChange={(e) => {checkEmail(e.target.value); checkErrors()}} label="E-mail" type="email" placeholder="Your best e-mail" />
         
         {/* Message */}
         <ContactTextArea placeholder="What you need to say?" label="Message" />
 
         {/* Submit Button */}
-        <SubmitButton>Submit</SubmitButton>
+        <SubmitButton onClick={handleSubmit} disabled={submitButtonStatus ? false : true}>Submit</SubmitButton>
     </ContactFormWrapper>
   )
 }
