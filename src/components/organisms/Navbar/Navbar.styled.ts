@@ -6,6 +6,10 @@ export const NavbarWrapper = styled.nav`
   height: 90px;
   margin-bottom: 60px;
 
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 24px;
+  }
+
   .container {
     display: flex;
     align-items: center;
