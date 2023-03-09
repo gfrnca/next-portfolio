@@ -1,13 +1,14 @@
 // General
-import { use, useState } from "react"
+import { use, useState } from "react";
 
 // CSS
-import { ContactFormWrapper } from "./ContactForm.styled"
+import { ContactFormWrapper } from "./ContactForm.styled";
 
 // Components
-import { SubmitButton } from "@/src/components/atoms/Buttons/Buttons.styled"
-import ContactInput from "@/src/components/atoms/ContactInput/ContactInput"
-import ContactTextArea from "@/src/components/atoms/ContactTextArea/ContactTextArea"
+import { SubmitButton } from "@/src/components/atoms/Buttons/Buttons.styled";
+import ContactInput from "@/src/components/atoms/ContactInput/ContactInput";
+import ContactTextArea from "@/src/components/atoms/ContactTextArea/ContactTextArea";
+import Separator from "@/src/components/atoms/Separator/Separator";
 
 const ContactForm = () => {
   // Submit Button status
@@ -22,24 +23,24 @@ const ContactForm = () => {
   // E-mail validation
   const checkEmail = (e: any) => {
     const filter =
-    /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
     if (!filter.test(e)) {
-      setEmailStatus(false)
+      setEmailStatus(false);
     } else {
-      setEmailStatus(true)
+      setEmailStatus(true);
     }
-  }
+  };
 
   const checkErrors = () => {
     if (nameStatus && emailStatus) {
       setSubmitButtonStatus(true);
-      console.log(submitButtonStatus)
+      console.log(submitButtonStatus);
     } else {
-      setSubmitButtonStatus(false)
-      console.log(submitButtonStatus)
+      setSubmitButtonStatus(false);
+      console.log(submitButtonStatus);
     }
-  }
+  };
 
   // Handle submit
 
@@ -47,25 +48,57 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (nameStatus && emailStatus) {
-      console.log('teste')
+      console.log("teste");
     }
-  }
+  };
 
   return (
     <ContactFormWrapper>
-        {/* Name */}
-        <ContactInput className={nameStatus ? 'filled' : ''} onChange={(e) => {e.target.value.length > 3 ? setNameStatus(true) : setNameStatus(false); checkErrors()}} label="Name" type="text" placeholder="How you want to get called?" />
+      {/* Name */}
+      <ContactInput
+        className={nameStatus ? "filled" : ""}
+        onChange={(e) => {
+          e.target.value.length > 3
+            ? setNameStatus(true)
+            : setNameStatus(false);
+          checkErrors();
+        }}
+        label="Name"
+        type="text"
+        placeholder="How you want to get called?"
+      />
 
-        {/* E-mail */}
-        <ContactInput className={emailStatus ? 'filled' : ''} onChange={(e) => {checkEmail(e.target.value); checkErrors()}} label="E-mail" type="email" placeholder="Your best e-mail" />
-        
-        {/* Message */}
-        <ContactTextArea placeholder="What you need to say?" label="Message" />
+      {/* E-mail */}
+      <ContactInput
+        className={emailStatus ? "filled" : ""}
+        onChange={(e) => {
+          checkEmail(e.target.value);
+          checkErrors();
+        }}
+        label="E-mail"
+        type="email"
+        placeholder="Your best e-mail"
+      />
 
-        {/* Submit Button */}
-        <SubmitButton onClick={handleSubmit} disabled={submitButtonStatus ? false : true}>Submit</SubmitButton>
+      {/* Message */}
+      <ContactTextArea placeholder="What you need to say?" label="Message" />
+
+      {/* Submit Button */}
+      <SubmitButton
+        onClick={handleSubmit}
+        disabled={submitButtonStatus ? false : true}
+      >
+        Submit
+      </SubmitButton>
+
+      <div className="or">
+        <h3>or</h3>
+        <p>
+          Send a message to <span>gabrielbfranca27@gmail.com</span>
+        </p>
+      </div>
     </ContactFormWrapper>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;
