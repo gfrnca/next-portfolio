@@ -20,6 +20,9 @@ const ContactForm = () => {
   // E-mail fill status
   const [emailStatus, setEmailStatus] = useState(false);
 
+  // Message status
+  const [messageStatus, setMessageStatus] = useState(false);
+
   // E-mail validation
   const checkEmail = (e: any) => {
     const filter =
@@ -81,7 +84,17 @@ const ContactForm = () => {
       />
 
       {/* Message */}
-      <ContactTextArea placeholder="What you need to say?" label="Message" />
+      <ContactTextArea
+        className={messageStatus ? "filled" : ""}
+        onChange={(e) => {
+          e.target.value.length > 3
+            ? setMessageStatus(true)
+            : setMessageStatus(false);
+          checkErrors();
+        }}
+        placeholder="What you need to say?"
+        label="Message"
+      />
 
       {/* Submit Button */}
       <SubmitButton

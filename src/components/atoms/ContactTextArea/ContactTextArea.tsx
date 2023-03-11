@@ -1,18 +1,29 @@
-import { InputLabel } from "../ContactInput/ContactInput.styled"
-import { TextAreaControl, TextAreaWrapper } from "./ContactTextArea.styled"
+import { InputLabel } from "../ContactInput/ContactInput.styled";
+import { TextAreaControl, TextAreaWrapper } from "./ContactTextArea.styled";
 
 interface TextAreaProps {
   label: string;
   placeholder?: string;
+  onChange?: React.ChangeEventHandler<HTMLTextAreaElement>;
+  className?: string;
 }
 
-const ContactTextArea = ({ label, placeholder }: TextAreaProps) => {
+const ContactTextArea = ({
+  label,
+  placeholder,
+  onChange,
+  className,
+}: TextAreaProps) => {
   return (
     <TextAreaWrapper>
       <InputLabel>{label}</InputLabel>
-      <TextAreaControl placeholder={placeholder} />
+      <TextAreaControl
+        className={className}
+        onChange={onChange}
+        placeholder={placeholder}
+      />
     </TextAreaWrapper>
-  )
-}
+  );
+};
 
-export default ContactTextArea
+export default ContactTextArea;
