@@ -38,4 +38,13 @@ export const projectsList: Project[] = [
     deploy: "https://rx6.vercel.app/",
     finished: true,
   },
+  {
+    name: "IP Address Tracker",
+    subtitle: "Util",
+    description: "A simple IP Tracker created with React using a public API.",
+    languages: ["HTML5", "Styled Components", "React", "JavaScript"],
+    github: "https://github.com/gfrnca/ReactIPTracker",
+    deploy: "https://iptracker-gfrnc.vercel.app/",
+    finished: true,
+  },
 ];

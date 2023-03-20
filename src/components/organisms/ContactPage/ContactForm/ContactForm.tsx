@@ -36,7 +36,7 @@ const ContactForm = () => {
   };
 
   const checkErrors = () => {
-    if (nameStatus && emailStatus) {
+    if (nameStatus && emailStatus && messageStatus) {
       setSubmitButtonStatus(true);
       console.log(submitButtonStatus);
     } else {
