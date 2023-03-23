@@ -6,6 +6,7 @@ interface TextAreaProps {
   placeholder?: string;
   onChange?: React.ChangeEventHandler<HTMLTextAreaElement>;
   className?: string;
+  name?: string;
 }
 
 const ContactTextArea = ({
@@ -13,6 +14,7 @@ const ContactTextArea = ({
   placeholder,
   onChange,
   className,
+  name,
 }: TextAreaProps) => {
   return (
     <TextAreaWrapper>
@@ -21,6 +23,7 @@ const ContactTextArea = ({
         className={className}
         onChange={onChange}
         placeholder={placeholder}
+        name={name}
       />
     </TextAreaWrapper>
   );

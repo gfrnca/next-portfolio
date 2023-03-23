@@ -7,6 +7,7 @@ interface InputProps {
   placeholder?: string;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   className?: string;
+  name?: string;
 }
 
 const ContactInput = ({
@@ -15,6 +16,7 @@ const ContactInput = ({
   placeholder,
   onChange,
   className,
+  name,
 }: InputProps) => {
   return (
     <InputWrapper>
@@ -24,6 +26,7 @@ const ContactInput = ({
         onChange={onChange}
         placeholder={placeholder}
         type={type}
+        name={name}
       />
     </InputWrapper>
   );

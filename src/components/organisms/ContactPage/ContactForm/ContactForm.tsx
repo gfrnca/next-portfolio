@@ -45,18 +45,11 @@ const ContactForm = () => {
     }
   };
 
-  // Handle submit
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-
-    if (nameStatus && emailStatus) {
-      console.log("teste");
-    }
-  };
-
   return (
-    <ContactFormWrapper>
+    <ContactFormWrapper
+      action="https://formsubmit.co/gabrielbfranca27@gmail.com"
+      method="POST"
+    >
       {/* Name */}
       <ContactInput
         className={nameStatus ? "filled" : ""}
@@ -67,6 +60,7 @@ const ContactForm = () => {
           checkErrors();
         }}
         label="Name"
+        name="name"
         type="text"
         placeholder="How you want to get called?"
       />
@@ -80,6 +74,7 @@ const ContactForm = () => {
         }}
         label="E-mail"
         type="email"
+        name="email"
         placeholder="Your best e-mail"
       />
 
@@ -92,15 +87,13 @@ const ContactForm = () => {
             : setMessageStatus(false);
           checkErrors();
         }}
+        name="message"
         placeholder="What you need to say?"
         label="Message"
       />
 
       {/* Submit Button */}
-      <SubmitButton
-        onClick={handleSubmit}
-        disabled={submitButtonStatus ? false : true}
-      >
+      <SubmitButton disabled={submitButtonStatus ? false : true} type="submit">
         Submit
       </SubmitButton>
 
