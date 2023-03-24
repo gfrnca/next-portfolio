@@ -13,6 +13,7 @@ export const ContactFormWrapper = styled.form`
     justify-content: center;
     align-items: center;
     gap: 8px;
+    text-align: center;
 
     h3 {
       font-size: 17px;
