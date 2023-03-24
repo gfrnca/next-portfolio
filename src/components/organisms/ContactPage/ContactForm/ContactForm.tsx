@@ -92,6 +92,8 @@ const ContactForm = () => {
         label="Message"
       />
 
+      <input type="hidden" name="_captcha" value="false" />
+
       {/* Submit Button */}
       <SubmitButton disabled={submitButtonStatus ? false : true} type="submit">
         Submit
