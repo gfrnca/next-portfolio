@@ -45,7 +45,7 @@ export const projectsList: Project[] = [
   {
     name: "IP Address Tracker",
     image: "ipaddress",
-    subtitle: "Util",
+    subtitle: "Consuming API",
     description: "A simple IP Tracker created with React using a public API.",
     languages: ["HTML5", "Styled Components", "React", "JavaScript"],
     github: "https://github.com/gfrnca/ReactIPTracker",
