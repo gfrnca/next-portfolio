@@ -41,7 +41,7 @@ const ProjectsList = ({ projects }: ProjectListProps) => {
             <div
               className="project-thumbnail"
               style={{
-                backgroundImage: `url(/assets/projects/${project.name.toLowerCase()}.png)`,
+                backgroundImage: `url(/assets/projects/${project.image.toLowerCase()}.png)`,
               }}
             />
             <div className="project-content">
