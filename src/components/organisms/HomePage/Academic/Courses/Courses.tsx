@@ -33,7 +33,7 @@ const Courses = () => {
             React do Zero a Maestria (c/ hooks, router, API, Projetos)
           </p>
           <p className="description">
-            Curso onde eu estou consolidando os princípios do React
+            Course where I am consolidating my React skills.
           </p>
           <p className="length">Jan. 2023 - Today</p>
         </div>
