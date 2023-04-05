@@ -15,6 +15,20 @@ export interface Course {
       finished: true,
     },
     {
+      title: "Alura",
+      about: "React com JavaScript: lidando com arquivos estáticos",
+      description: "",
+      length: "2023",
+      finished: true,
+    },
+    {
+      title: "Alura",
+      about: "React: abstraindo seu CSS com Styled Components",
+      description: "",
+      length: "2023",
+      finished: true,
+    },
+    {
       title: "Udemy",
       about: "React do Zero a Maestria (c/ hooks, router, API, Projetos)",
       description: "Course where I am consolidating my React skills.",

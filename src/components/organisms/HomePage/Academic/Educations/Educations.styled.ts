@@ -37,16 +37,6 @@ export const EducationsWrapper = styled.div`
           background: ${(props) => props.theme.colors.secondary.light};
           box-shadow: rgba(4, 211, 97, 0.4) 0px 0px 10px 2px,
             rgba(4, 211, 97, 0.4) 0px 30px 20px -30px;
-
-          ::after {
-            content: "";
-            width: 2px;
-            height: 200px;
-            background: linear-gradient(180deg, #04d361, #09090a);
-            z-index: -1;
-            display: block;
-            margin-left: 3px;
-          }
         }
       }
     }
