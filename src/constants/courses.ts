@@ -17,8 +17,8 @@ export interface Course {
     {
       title: "Alura",
       about: "React com JavaScript: lidando com arquivos estáticos",
-      description: "",
-      length: "2023",
+      description: "Basic React course that I made to consolidate my React basic knowledge structure.",
+      length: "2023", 
       finished: true,
     },
     {
