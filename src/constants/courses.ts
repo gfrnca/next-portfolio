@@ -24,7 +24,7 @@ export interface Course {
     {
       title: "Alura",
       about: "React: abstraindo seu CSS com Styled Components",
-      description: "",
+      description: "Basic and complete Styled Components course",
       length: "2023",
       finished: true,
     },
