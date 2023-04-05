@@ -1,4 +1,5 @@
 // CSS
+import { coursesList } from "@/src/constants/courses";
 import { CoursesWrapper } from "./Courses.styled";
 
 const Courses = () => {
@@ -9,34 +10,17 @@ const Courses = () => {
       </h2>
 
       <div className="courses">
-        {/* ETEC */}
-        <div className="course">
-          <div className="title">
-            <span className="complete" /> Alura
+        {coursesList.map((course) => (
+          <div className="course">
+            <div className="title">
+              <span className={course.finished ? "complete" : ""} />
+              {course.title}
+            </div>
+            <p className="about">{course.about}</p>
+            <p className="description">{course.description}</p>
+            <p className="length">{course.length}</p>
           </div>
-          <p className="about">JavaScript para Web: Crie páginas dinâmicas</p>
-          <p className="description">
-            I learned about optimized code that goes through all the buttons,
-            reducing code repetition and increasing the reusability and
-            maintainability of this code, among other things such as playing
-            audio.
-          </p>
-          <p className="length">2023</p>
-        </div>
-
-        {/* FIAP */}
-        <div className="course">
-          <div className="title">
-            <span /> Udemy
-          </div>
-          <p className="about">
-            React do Zero a Maestria (c/ hooks, router, API, Projetos)
-          </p>
-          <p className="description">
-            Course where I am consolidating my React skills.
-          </p>
-          <p className="length">Jan. 2023 - Today</p>
-        </div>
+        ))}
       </div>
     </CoursesWrapper>
   );
