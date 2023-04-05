@@ -8,8 +8,7 @@ import { Container } from "@/src/styles/global";
 import { MenuWrapper } from "./Menu.styled";
 
 // Links
-import { navLinks } from "@/src/contants";
-import { event } from "jquery";
+import { navLinks } from "@/src/constants/navLinks";
 
 interface Props {
   setMenu: Dispatch<SetStateAction<boolean>>;

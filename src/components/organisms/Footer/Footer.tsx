@@ -7,7 +7,7 @@ import { Container } from "@/src/styles/global";
 import { FooterWrapper } from "./Footer.styled";
 
 // Links
-import { navLinks } from "@/src/constants";
+import { navLinks } from "@/src/constants/navLinks";
 
 const Footer = () => {
   return (

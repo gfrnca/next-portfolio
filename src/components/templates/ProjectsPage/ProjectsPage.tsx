@@ -10,7 +10,7 @@ import ProjectsHeader from "../../organisms/ProjectsPage/ProjectsHeader/Projects
 import ProjectsList from "../../organisms/ProjectsPage/ProjectsList/ProjectsList";
 
 // Data
-import { projectsList } from "../../../contants/projects";
+import { projectsList } from "../../../constants/projects";
 
 const ProjectsPage = () => {
   const [projects, setProjects] = useState(projectsList);
