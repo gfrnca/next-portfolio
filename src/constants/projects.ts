@@ -11,17 +11,6 @@ export interface Project {
 
 export const projectsList: Project[] = [
   {
-    name: "Camel",
-    image: "camel",
-    subtitle: "Mini-blog",
-    description:
-      "A mini-blog containing functions like authentication, posts and friends.",
-    languages: ["HTML5", "CSS3", "React", "Typescript", "Firebase"],
-    github: "https://github.com/gfrnca/ReactBlogCamel",
-    deploy: "https://camel-blog.vercel.app/",
-    finished: false,
-  },
-  {
     name: "Portfolio",
     image: "portfolio",
     subtitle: "Landing Page",
@@ -30,6 +19,16 @@ export const projectsList: Project[] = [
     github: "https://github.com/gfrnca/NextGfrncaPortfolio",
     deploy: "https://gfrnca.vercel.app/",
     finished: false,
+  },
+  {
+    name: "Ossain",
+    image: "ossain",
+    subtitle: "Final Paper Landing Page",
+    description: "A landing page built to show a idea and business model of a Final Paper for the System Development technical course.",
+    languages: ["HTML5", "TypeScript", "Angular", "Firebase"],
+    github: "https://github.com/gfrnca/AngularOssainWeb",
+    deploy: "https://ossainweb.vercel.app/",
+    finished: true,
   },
   {
     name: "RX6",
